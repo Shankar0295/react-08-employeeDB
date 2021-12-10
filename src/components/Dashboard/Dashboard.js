@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Dashboard.css';
-import { FaSort } from "react-icons/fa";
+import { FaSort, FaFilter } from "react-icons/fa";
 
 const Dashboard = () => {
 
@@ -101,6 +101,9 @@ const Dashboard = () => {
 
     return (
         <div className="dashboard-container">
+            <div className="dashboard-filter">
+                <FaFilter /><input type="text" placeholder="Enter name/designation/type,id" className="input-filter" />
+            </div>
             <table className="tabel-wrapper">
                 <tbody >
                     <tr>
